@@ -513,11 +513,27 @@
                     </li>
                 </ul>
             </div>
+
+<!--Mail-input-->            
+            <div class="mail-input">
+                <span class="footer-subscribe-title"> Подпишитесь на рассылку</span>
+                <form class="mail-input-form">
+                    <label for="mail"></label>
+                    <input type="email" name="mail" class="input">
+                    <button type="submit" class="footer-btn"><span class="text-footer-btn">Подписаться</span>
+                        <svg class="send-icon" 
+                        width="24"
+                        height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
     
-
+<!--Modal-->
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
             <button data-modal-close type="button" class="close-modal-btn">
@@ -527,6 +543,41 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+
+            <p class="title-modal">Оставьте свои данные, мы вам перезвоним
+            </p>
+
+            <form class="modal-input-form">
+                <label for="name">Имя</label>
+                <input type="text" name="name" class="input-name" autocomplete="name">
+
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" class="input-tel" autocomplete="tel">
+
+                <label for="email">Почта</label>
+                <input type="email" name="email" class="input-email" autocomplete="email">
+
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" rows="10">Введите текст</textarea>
+
+                <input type="checkbox" name="agreement" value="agreement" id="agreement">
+                <label for="agreement">Соглашаюсь с рассылкой и принимаю 
+                    <a href="" class="agreement-link">Условия договора</a> 
+                </label>
+
+
+                <button type="submit" class="send-modal-btn">
+                
+                    <span class="text-send-modal-btn">Отправить</span>
+                </button>
+            
+                
+                </form>
+
+           
+
+            
+            
         </div>
     </div>
     
