@@ -519,7 +519,11 @@
                 <span class="footer-subscribe-title"> Подпишитесь на рассылку</span>
                 <form class="mail-input-form">
                     <label for="mail"></label>
-                    <input type="email" name="mail" class="input">
+                    <input 
+                    type="email" 
+                    name="mail" 
+                    class="input" 
+                    placeholder="E-mail">
                     <button type="submit" class="footer-btn"><span class="text-footer-btn">Подписаться</span>
                         <svg class="send-icon" 
                         width="24"
@@ -548,31 +552,60 @@
             </p>
 
             <form class="modal-input-form">
-                <label for="name">Имя</label>
-                <input type="text" name="name" class="input-name" autocomplete="name">
+                <div class="form-name form-field">
+                    <label for="name" class="form-label">Имя</label>
+                    <input 
+                    type="text" 
+                    name="name" 
+                    class="input-name form-input" 
+                    autocomplete="name"
+                    >
+                </div>
 
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" class="input-tel" autocomplete="tel">
-
-                <label for="email">Почта</label>
-                <input type="email" name="email" class="input-email" autocomplete="email">
-
-                <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" rows="10">Введите текст</textarea>
-
-                <input type="checkbox" name="agreement" value="agreement" id="agreement">
-                <label for="agreement">Соглашаюсь с рассылкой и принимаю 
-                    <a href="" class="agreement-link">Условия договора</a> 
-                </label>
-
+                <div class="form-tel form-field">
+                    <label for="tel" class="form-label">Телефон</label>
+                    <input 
+                    type="tel" 
+                    name="tel" 
+                    class="input-tel form-input" 
+                    autocomplete="tel">
+                </div>
+           
+               <div class="form-email form-field">
+                    <label for="email" class="form-label">Почта</label>
+                    <input
+                    type="email"
+                    name="email"
+                    class="input-email form-input"
+                    autocomplete="email">
+               </div>
+                
+               <div class="form-comment form-field">
+                    <label for="comment" class="form-label">Комментарий</label>
+                    <textarea
+                    name="comment"
+                    id="comment"
+                    rows="10"
+                    placeholder="Введите текст"
+                    class="textarea form-input">
+                    </textarea>
+               </div>
+                
+               <div class="form-agreement">
+                    <input 
+                    type="checkbox" 
+                    name="agreement" 
+                    value="agreement" 
+                    id="agreement">
+                    <label for="agreement" class="form-agreement-text">Соглашаюсь с рассылкой и принимаю 
+                        <a href="" class="agreement-link">Условия договора</a>
+                    </label>
+               </div>
 
                 <button type="submit" class="send-modal-btn">
-                
                     <span class="text-send-modal-btn">Отправить</span>
                 </button>
-            
-                
-                </form>
+            </form>
 
            
 
