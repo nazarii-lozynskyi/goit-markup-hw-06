@@ -947,6 +947,13 @@ body {
   position: absolute;
 }
 
+/*.check-box-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}*/
+
 .check-box {
   position: absolute;
   top: 50%;
