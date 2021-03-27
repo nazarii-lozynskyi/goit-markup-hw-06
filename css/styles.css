@@ -100,6 +100,13 @@ body {
   margin-right: 93px;
   padding-top: 22px;
   padding-bottom: 23px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover,
+.logo:focus {
+  transform: scale(1.1);
 }
 
 .logo-web {
@@ -199,6 +206,7 @@ body {
 .navigation-link:focus,
 .navigation-link:active {
   color: var(--accent-color);
+  transform: scale(1.1);
 }
 .current {
   color: var(--accent-color);
@@ -234,6 +242,8 @@ body {
   margin-right: 10px;
 
   fill: currentColor;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-contacts-icon-smartphone {
@@ -243,7 +253,17 @@ body {
   margin-right: 10px;
 
   fill: currentColor;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.site-contacts .contacts:hover .site-contacts-icon-envelope,
+.site-contacts .contacts:hover .site-contacts-icon-smartphone,
+.site-contacts .contacts:focus .site-contacts-icon-envelope,
+.site-contacts .contacts:focus .site-contacts-icon-smartphone {
+  transform: scale(1.3);
+}
+
 .site-contacts .contacts {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -520,7 +540,8 @@ body {
   color: var(--transform-origin-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link-item:not(:last-child) {
@@ -532,6 +553,7 @@ body {
 .team-soc-link:active {
   background: var(--accent-color);
   color: var(--wight-color);
+  transform: scale(1.1);
 }
 
 .team-soc-link-icon {
@@ -577,14 +599,24 @@ body {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
-.customers-link:focus,
 .customers-link:active {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  transform: scale(1.1);
+}
+
+.customers-link:focus {
+  outline: none /*3px solid black*/;
+
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  transform: scale(1.1);
 }
 
 .customers-icon {
@@ -605,10 +637,16 @@ body {
   align-items: baseline;
 }
 
-.footer > .container > .logo {
+.footer .container .logo {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-right: 0px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .container .logo:focus {
+  transform: scale(1.1);
 }
 
 /*========== ADDRESS ========*/
@@ -673,13 +711,15 @@ body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:active,
 .footer-social-link:focus {
   background-color: var(--accent-color);
+  transform: scale(1.1);
 }
 /*========== END ADDRESS ========*/
 
@@ -896,10 +936,16 @@ body {
 }
 
 .form-input:hover,
-.form-input:focus,
 .form-input:active {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+}
+
+.form-input:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
+  outline: none;
 }
 
 .form-comment {
@@ -945,6 +991,9 @@ body {
   --moz-appearance: none;
 
   position: absolute;
+}
+
+.check-input:focus {
 }
 
 /*.check-box-icon {
@@ -1070,7 +1119,8 @@ body {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-button:hover,
 .filters-button:focus,
@@ -1080,10 +1130,12 @@ body {
   color: var(--wight-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
 }
 /*================ END FILTERS ==================*/
 
 /*================== PICTURES ===================*/
+
 .pictures-list {
   display: flex;
   flex-wrap: wrap;
